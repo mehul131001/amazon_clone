@@ -2,7 +2,7 @@ import React from "react";
 import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
-import { getBasktetTotal } from "./Reducer";
+import { getBasketTotal } from "./Reducer";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Subtotal = () => {
@@ -24,7 +24,7 @@ const Subtotal = () => {
           </>
         )}
         decimalScale={2}
-        value={getBasktetTotal(basket)} //part of hw
+        value={getBasketTotal(basket)} //part of hw
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
